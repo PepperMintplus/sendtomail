@@ -1,0 +1,149 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 590
+  ClientWidth = 321
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 321.000000000000000000
+    Size.Height = 590.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    Sizes = (
+      321s
+      564s
+      321s
+      564s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 44.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #36865#20449
+      ExplicitSize.cx = 44.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Button1: TButton
+        Position.X = 79.000000000000000000
+        Position.Y = 61.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = #20986#31038
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 79.000000000000000000
+        Position.Y = 237.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 121.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = #36864#31038
+        OnClick = Button2Click
+      end
+      object Text1: TText
+        Position.X = 88.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 44.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #35373#23450
+      ExplicitSize.cx = 44.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Address: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '***@*****.***'
+        Position.X = 56.000000000000000000
+        Position.Y = 86.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Pass: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Password = True
+        Text = '*'
+        Position.X = 56.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label1: TLabel
+        Position.X = 88.000000000000000000
+        Position.Y = 46.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'MailAddress'
+        TabOrder = 2
+      end
+      object Label2: TLabel
+        Position.X = 88.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Password'
+        TabOrder = 3
+      end
+      object SendTo: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = '******@***.**'
+        Position.X = 56.000000000000000000
+        Position.Y = 230.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label3: TLabel
+        Position.X = 88.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'SendTo'
+        TabOrder = 5
+      end
+    end
+  end
+  object IdSMTP1: TIdSMTP
+    SASLMechanisms = <>
+    Left = 240
+    Top = 408
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 240
+    Top = 472
+  end
+end
